@@ -1,0 +1,47 @@
+.content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+  grid-template-areas: 
+  'header header'
+  'left right';
+}
+
+header {
+  grid-area: header;
+}
+
+#bg {
+  grid-area: left;
+  background: url(/Rocket.q/assets/background.svg) no-repeat top/contain ;
+}
+
+main {
+  grid-area: right;
+  display: flex;
+  align-items: center;
+}
+
+main .conteinter {
+  width: min(36.3rem 100%);
+}
+
+main h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--black);
+  font-size: clamp(20px 5vw 2.8rem);
+  margin-bottom: 2.4rem;
+}
+
+input {
+  border: 0.2rem solid var(--grey-blue);
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  height: 5rem;
+}
+
+input, button {
+  margin-bottom: 1.8rem;
+  width: 100%;
+}
