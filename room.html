@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Rocket.q/style/global.css">
+  <link rel="stylesheet" href="/Rocket.q/style/room.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <title>Rocket.q</title>
+</head>
+
+<body>
+  <div id="room" class="content">
+    <header>
+
+      <a href="home.html" target="_self">
+        <img src="/Rocket.q/assets/logo.svg" alt="logo">
+      </a>
+      
+      <div class="menu">
+        <button class="button outlined">
+          #324243
+          <img src="/Rocket.q/assets/box-button.svg" alt="">
+        </button>
+
+        <a href="create-room.html" target="_self">
+          <button>
+            <img src="/Rocket.q/assets/users_w.svg" alt="Criar sala">
+            Criar sala
+        </button>
+        </a>
+      </div>
+
+    </header>
+
+    <main>
+      <div class="conteiner">
+        <h2>
+          Faça sua pergunta
+        </h2>
+
+        <form action="">
+          <label class="sr-only" for-id="question">O que você quer perguntar ?</label>
+          <textarea name="question" id="question" placeholder="O que você quer perguntar ?" cols="80" rows="4"></textarea>
+          
+          <footer>
+            <div>
+              <img src="/Rocket.q/assets/lock_black_24dp 1.svg" alt="cadeado">
+              Esta pergunta é anônima
+            </div>
+            <button>Enviar</button>
+          </footer>
+
+        </form>
+      </div>
+
+      <section id="questions">
+        <h2 class="sr-only">Perguntas da comunidade</h2>
+        <div class="questions">
+
+          <div class="question-wraper">
+            <div class="question-content">
+              <div class="user">
+                <img src="/Rocket.q/assets/avatar.svg" alt="">
+              </div>
+              <div class="question">
+                <p>Qual a diferença entre const, var e let no JavaScript ?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#">
+                <img src="/Rocket.q/assets/check 1.svg" alt="">
+                Marcar como lida
+              </a>
+              <a href="">
+                <img src="/Rocket.q/assets/trash 1.svg" alt="">
+                Excluir
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>

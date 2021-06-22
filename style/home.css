@@ -1,6 +1,6 @@
 .content {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 40% 10%;
   grid-template-rows: 11.4rem 1fr;
   grid-template-areas: 
   'header header'
@@ -13,17 +13,19 @@ header {
 
 #bg {
   grid-area: left;
-  background: url(/Rocket.q/assets/background.svg) no-repeat top/contain ;
+  background: url(/Rocket.q/assets/home-bg.svg) no-repeat top/contain;
+  background-position: -10rem;
 }
 
 main {
   grid-area: right;
   display: flex;
   align-items: center;
+  margin-top: -6rem;
 }
 
-main .conteinter {
-  width: min(36.3rem 100%);
+main .conteiner {
+  width: min(36.3rem, 100%);
 }
 
 main h2 {
@@ -44,4 +46,48 @@ input {
 input, button {
   margin-bottom: 1.8rem;
   width: 100%;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.separator div:nth-child(2){
+  font-family: 'Poppins', sans-serif;
+  color: var(--grey-blue);
+  font-weight: 400;
+  line-height: 2.4rem;
+
+  margin: 4rem 1.345rem 4rem 1.345rem;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3){
+  background: var(--grey-blue);
+  width: 80%;
+  height: 1px;
+} 
+
+.ball {
+  width: 21.2rem;
+  height: 21.2rem;
+  background: var(--ligthblue);
+  clip-path: circle();
+
+  position: fixed;
+  z-index: -1;
+}
+
+.ball.top {
+  top: -40rem;
+  right: -45rem;
+
+  width: 63.3rem;
+  height: 63.3rem;
+}
+
+.ball.bottom {
+  bottom: -16rem;
+  right: 4rem;
 }

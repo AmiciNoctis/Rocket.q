@@ -26,12 +26,13 @@ html{
 
 body {
   height: 100vh;
+  display: flex;
   background: var(--background);
 }
 
 .content header {
-  width: 80%;
-  margin: 3.5rem 3.5rem 16rem auto;
+  width: 90%;
+  margin: 3.5rem auto;
 }
 
 .content header image {
