@@ -16,8 +16,9 @@ html{
   --overlay: #040911;
   --icons-detail: #A5B0C1;
 
+  --background-modal: 
   --grey-dark: #4D5E77;
-  --grey-grey: hsl(225deg 24% 93%);
+  --grey-grey: #4D5E77;
   --grey-blue: #A1B2CD;
   --grey-medium: #D3D9E2;
   --grey-light: #E5EAF1;
@@ -101,4 +102,16 @@ button.outlined,
   border: .2rem solid var(--blue);
   background: var(--white);
   color: var(--blue);
+}
+
+button.red,
+.button.red {
+  background: var(--red);
+  color: var(--white);
+}
+
+button.grey,
+.button.grey {
+  background: var(--grey-light);
+  color: var(--grey-dark);
 }

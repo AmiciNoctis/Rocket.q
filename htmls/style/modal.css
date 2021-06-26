@@ -1,0 +1,91 @@
+.modal-wraper.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-wraper {
+  position: fixed;
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  background: rgb(4, 9, 17, 0.8);
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-wraper .modal {
+  background: var(--background);
+  font-family: 'Poppins';
+
+  width: min(59rem, 90%);
+  height: min(36.6rem);
+  padding: 6.4rem;
+
+  margin: auto;
+
+  border-radius: .8rem;
+
+  text-align: center;
+}
+
+.modal-wraper .modal h2 {
+  font-weight: bold;
+  color: var(--black);
+
+  align-items: center;
+
+  margin-bottom: 1.2rem;
+}
+
+.modal-wraper .modal p {
+  font-weight: 400;
+  color: var(--grey-grey);
+
+  margin-bottom: 2.4rem;
+}
+
+;.modal-wraper .modal form {
+  align-items: center;
+}
+
+.modal-wraper .modal form input {
+  height: 4.8rem;
+  width: 30.2rem;
+
+  padding: 1.3rem 1.6rem;
+
+  border: .2rem solid var(--blue); 
+  
+  margin-bottom: 4rem;
+}
+
+.modal-wraper .modal .buttons {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.modal-wraper .modal .buttons div, button {
+  height: 5rem;
+}
+
+button:hover, .button:hover {
+  filter: brightness(.8);
+}
+
+.modal-wraper .modal .buttons div {
+  width: 13.9rem;
+
+  margin-right: .8rem;
+  
+}
+
+.modal-wraper .modal .buttons button {
+  width: 15.5rem;
+}
