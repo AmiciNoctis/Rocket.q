@@ -87,5 +87,5 @@ button:hover, .button:hover {
 }
 
 .modal-wraper .modal .buttons button {
-  width: 15.5rem;
+  min-width: 15.5rem;
 }

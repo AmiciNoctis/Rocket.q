@@ -22,12 +22,12 @@
   <div id="room" class="content">
     
     <header>
-      <a href="index.ejs" target="_self">
+      <a href="/" target="_self">
         <img src="images/logo.svg" alt="logo">
       </a>
       
       <div class="menu">
-        <button class="button outlined">
+        <button id="room-id" data-id="324243" class="button outlined">
           #324243
           <img src="images/box-button.svg" alt="">
         </button>
@@ -79,11 +79,11 @@
             </div>
 
             <div class="actions">
-              <a href="#" class="check">
+              <a href="#" class="check" data-id="2">
                 <img src="images/check 1.svg" alt="">
                 Marcar como lida
               </a>
-              <a href="#" class="excluir">
+              <a href="#" class="excluir" data-id="2">
                 <img src="images/trash 1.svg" alt="">
                 Excluir
               </a>
@@ -104,11 +104,11 @@
             </div>
 
             <div class="actions">
-              <a href="#" class="check">
+              <a href="#" class="check" data-id="3">
                 <img src="images/check 1.svg" alt="">
                 Marcar como lida
               </a>
-              <a href="#" class="excluir">
+              <a href="#" class="excluir" data-id="3">
                 <img src="images/trash 1.svg" alt="">
                 Excluir
               </a>
@@ -126,7 +126,7 @@
             </div>
 
             <div class="actions">
-              <a href="#" class="excluir">
+              <a href="#" class="excluir" data-id="1">
                 <img src="images/trash 1.svg" alt="">
                 Excluir
               </a>
@@ -144,7 +144,7 @@
       <h2>Excluir pergunta</h2>
       <p>Tem certeza que você deseja excluir esta pergunta?</p>
 
-      <form action="">
+      <form action="#" method="POST">
         <label for-id="password" class="sr-only"></label>
         <input type="password" id="password" name="password" placeholder="Insira a senha da sala.">
 
