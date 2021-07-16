@@ -10,7 +10,7 @@ export default function modal() {
 
   function close() {
     document.querySelector('.modal-wraper').classList.remove('active');
-  }
+  };
 
   return {
     open,
